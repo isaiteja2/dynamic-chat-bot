@@ -1,11 +1,8 @@
-# Force the installation of a newer, available sqlite3 binary
-pysqlite3-binary==0.5.4
-# Pin chromadb to a version known to work with this binary
-chromadb==0.4.24
-# Add the rest of your dependencies
 streamlit
 openai
 python-dotenv
 notion-client
+chromadb==0.4.24
+pysqlite3-binary==0.5.2
 sentence-transformers
 numpy==1.26.4
