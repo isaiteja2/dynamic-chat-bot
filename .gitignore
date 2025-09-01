@@ -1,0 +1,10 @@
+# .gitignore
+
+# Ignore the file with secret keys and passwords
+.env
+
+# Ignore the Python virtual environment folder
+venv/
+
+# Ignore Python cache files
+__pycache__/
