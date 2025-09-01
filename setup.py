@@ -1,6 +1,6 @@
 import os
 import chromadb
-from chromadb.errors import NotFoundError
+# from chromadb.errors import NotFoundError
 from notion_handler import fetch_all_text_from_database
 from embedding_handler import chunk_text, setup_chroma_collection
 from config import CHROMA_PATH, PUBLIC_COLLECTION_NAME, INTERNAL_COLLECTION_NAME
@@ -22,8 +22,8 @@ def main():
         try:
             client.delete_collection(name=PUBLIC_COLLECTION_NAME)
             print("  > Old public collection deleted.")
-        except (ValueError, NotFoundError):
-        # except (ValueError):
+        # except (ValueError, NotFoundError):
+        except (ValueError):
             print("  > No old public collection to delete, creating anew.")
             
         print("  > Fetching all pages and their metadata from Notion...")
@@ -55,8 +55,8 @@ def main():
         try:
             client.delete_collection(name=INTERNAL_COLLECTION_NAME)
             print("  > Old internal collection deleted.")
-        except (ValueError, NotFoundError):
-        # except (ValueError):
+        # except (ValueError, NotFoundError):
+        except (ValueError):
             print("  > No old internal collection to delete, creating anew.")
             
         print("  > Fetching all pages and their metadata from Notion...")
