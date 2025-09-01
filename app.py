@@ -115,3 +115,4 @@ if prompt := st.chat_input("Ask a question..."):
         )
         if feedback_text:
             log_feedback(convo_id, "text", feedback_text)
+            st.toast("Detailed feedback submitted. Thank you!")
