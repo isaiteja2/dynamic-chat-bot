@@ -1,1 +1,6 @@
+<<<<<<< HEAD
 ffmpeg
+=======
+build-essential
+ffmpeg
+>>>>>>> 0d335ae133ae7c792c457095bddd4a35573e9ea4
