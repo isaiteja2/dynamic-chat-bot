@@ -6,8 +6,8 @@ from config import INTERNAL_ACCESS_PASSWORD, SUPER_ADMIN_PASSWORD
 import setup as knowledge_base_setup
 
 # --- Page Configuration ---
-st.set_page_config(page_title="Corporate Knowledge Bot", layout="wide")
-st.title("🤖 Corporate Knowledge Bot")
+st.set_page_config(page_title="RevRe Bot", layout="wide")
+st.title("🤖 RevRe Bot")
 
 # --- Initialize Databases ---
 # This ensures the logging database and tables are created on the first run
